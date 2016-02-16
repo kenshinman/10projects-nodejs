@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title #{title} | Express Website
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../favicon.ico')
+    title My Simple NodeJS Website
+    link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(href='stylesheets/starter-template.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') My Express Website
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li(class=(title === 'Home' ? 'active' : ''))
+              a(href='/') Home
+            li(class=(title === 'About' ? 'active' : ''))
+              a(href='/about') About Us
+            li(class=(title === 'Contact' ? 'active' : ''))
+              a(href='/contact') Contact
+        // /.nav-collapse
+    .container
+    // /.container
+    
+    block content
+    footer
+        p.text-center &copy; 2015. Copyright Reserved
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/bootstrap.min.js')
+    
